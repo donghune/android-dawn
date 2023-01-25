@@ -1,7 +1,8 @@
-package io.github.template
+package io.github.dawn.design_system
 
-import org.junit.Assert.assertEquals
 import org.junit.Test
+
+import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).

@@ -1,4 +1,4 @@
-package io.github.template.ui.theme
+package io.github.network.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

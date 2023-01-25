@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.template"
+    namespace = "io.github.dawn"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "io.github.template"
+        applicationId = "io.github.dawn"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
