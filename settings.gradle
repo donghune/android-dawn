@@ -16,3 +16,6 @@ rootProject.name = "dawn"
 include ':app'
 include ':common:network'
 include ':common:design-system'
+include ':data:example'
+include ':feature:example'
+include ':domain:example'
