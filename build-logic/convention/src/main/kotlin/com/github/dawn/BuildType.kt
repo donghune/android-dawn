@@ -1,6 +1,6 @@
 package com.github.dawn
 
-enum class DawnBuildType(val applicationIdSuffix: String? = null) {
+enum class BuildType(val applicationIdSuffix: String? = null) {
     DEBUG(".debug"),
     RELEASE("release"),
 }
