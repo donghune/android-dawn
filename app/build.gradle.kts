@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-import com.github.dawn.DawnBuildType
+import com.github.dawn.BuildType
 
 plugins {
     id("dawn.android.application")
@@ -22,11 +22,11 @@ android {
 
     buildTypes {
         debug {
-            applicationIdSuffix = DawnBuildType.DEBUG.applicationIdSuffix
+            applicationIdSuffix = BuildType.DEBUG.applicationIdSuffix
         }
         release {
             isMinifyEnabled = false
-            applicationIdSuffix = DawnBuildType.RELEASE.applicationIdSuffix
+            applicationIdSuffix = BuildType.RELEASE.applicationIdSuffix
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
