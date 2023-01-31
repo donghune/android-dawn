@@ -1,20 +1,18 @@
 @file:Suppress("UnstableApiUsage")
 
+import com.github.dawn.DawnBuildType
+
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    id("dawn.android.application")
+    id("dawn.android.application.compose")
+    id("dawn.android.hilt")
 }
 
 android {
     namespace = "io.github.dawn"
-    compileSdk = 33
 
     defaultConfig {
         applicationId = "io.github.dawn"
-        minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -23,23 +21,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix = DawnBuildType.DEBUG.applicationIdSuffix
+        }
         release {
             isMinifyEnabled = false
+            applicationIdSuffix = DawnBuildType.RELEASE.applicationIdSuffix
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.2.0"
     }
     packagingOptions {
         resources {
@@ -51,6 +40,7 @@ android {
 dependencies {
     val composeVersion = "1.2.0"
     implementation("androidx.core:core-ktx:1.9.0")
+    implementation(libs.androidx.core.ktx)
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
     implementation("androidx.activity:activity-compose:1.6.1")
     implementation("androidx.compose.ui:ui:$composeVersion")

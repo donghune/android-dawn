@@ -1,14 +1,16 @@
 buildscript {
     repositories {
+        google()
         mavenCentral()
     }
 }
 
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    id("com.android.application") version "7.4.0" apply false
-    id("com.android.library") version "7.4.0" apply false
-    kotlin("android") version "1.7.0" apply false
-    kotlin("jvm") version "1.7.0" apply false
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotlin.jvm) apply false
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.hilt) apply false
     id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
     id("io.gitlab.arturbosch.detekt") version "1.22.0"
 }
@@ -19,6 +21,7 @@ subprojects {
     repositories {
         // Required to download KtLint
         mavenCentral()
+        google()
     }
 
     // Optionally configure plugin

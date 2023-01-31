@@ -1,21 +1,25 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
     }
 }
+
 rootProject.name = "dawn"
-include ':app'
-include ':common:network'
-include ':common:design-system'
-include ':data:example'
-include ':feature:example'
-include ':domain:example'
+rootProject.buildFileName = "build.gradle.kts"
+
+include(":app")
+include(":common:network")
+include(":common:design-system")
+include(":data:example")
+include(":feature:example")
+include(":domain:example")
