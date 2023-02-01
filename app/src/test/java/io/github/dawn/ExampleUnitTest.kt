@@ -1,4 +1,4 @@
-package io.github.network
+package io.github.dawn
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,4 +1,4 @@
-package io.github.network.ui.theme
+package io.github.dawn.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
