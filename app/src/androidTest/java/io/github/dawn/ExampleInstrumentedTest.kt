@@ -1,4 +1,4 @@
-package io.github.network
+package io.github.dawn
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

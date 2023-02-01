@@ -1,4 +1,4 @@
-package io.github.network.ui.theme
+package io.github.dawn.ui.theme
 
 import android.app.Activity
 import android.os.Build
