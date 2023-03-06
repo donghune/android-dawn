@@ -40,5 +40,13 @@ gradlePlugin {
             id = "dawn.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("androidApplicationFirebase") {
+            id = "loacq.android.application.firebase"
+            implementationClass = "AndroidApplicationFirebaseConventionPlugin"
+        }
+        register("androidLibraryFirebase") {
+            id = "loacq.android.library.firebase"
+            implementationClass = "AndroidLibraryFirebaseConventionPlugin"
+        }
     }
 }
