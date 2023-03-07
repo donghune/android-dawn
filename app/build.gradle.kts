@@ -50,12 +50,15 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.compose.material3)
 
+    implementation(libs.accompanist.systemuicontroller)
+
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.lifecycle.viewModelCompose)
 
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
     implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("androidx.window:window-core:1.1.0-alpha04")
 
     testImplementation(libs.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)

@@ -1,4 +1,4 @@
-package io.github.dawn.ui.theme
+package io.github.dawn.designsystem
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

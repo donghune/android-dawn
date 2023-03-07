@@ -1,5 +1,6 @@
 plugins {
     id("dawn.android.library")
+    id("dawn.android.hilt")
 }
 
 android {
@@ -8,4 +9,8 @@ android {
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+}
+
+dependencies {
+    implementation(libs.kotlinx.coroutines.android)
 }

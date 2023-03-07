@@ -1,8 +1,7 @@
-package io.github.dawn.design_system
-
-import org.junit.Test
+package io.github.dawn.designsystem
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).
