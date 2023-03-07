@@ -40,7 +40,7 @@ gradlePlugin {
             id = "dawn.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
-        register("androidApplicationFirebase") {
+        register("androidFirebase") {
             id = "dawn.android.firebase"
             implementationClass = "AndroidFirebaseConventionPlugin"
         }
