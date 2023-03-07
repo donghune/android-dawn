@@ -1,4 +1,4 @@
-package io.github.dawn.data.util.di
+package io.github.dawn.data.di
 
 import dagger.Binds
 import dagger.Module
